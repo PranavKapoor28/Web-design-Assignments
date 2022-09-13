@@ -7,6 +7,7 @@
         F1 TV_Watch
     </title>
     <link rel="icon" type="image/x-icon" href="images/f1logo.jpg" />
+
 </head>
 
 <body>
@@ -15,8 +16,7 @@
     <nav>
         <a href="main.html" style="float:left">Home</a>
         <p style="float: left;color: white;margin-left: 27%;">Play Background music</p>
-        <audio src="Audio/f1.mp3" controls style="float: left;margin-left: 2%;">
-        </audio>
+        <audio src="Audio/f1.mp3" controls style="float: left;margin-left: 2%;" autoplay loop></audio>
         <a class="active" href="#slideshow" style="float:right">View top performing teams</a>
 
         <!-- <div class="back_music">
@@ -31,6 +31,8 @@
         <h1>
             Formula 1 FanPage
         </h1>
+
+        <marquee direction="right" scrollamount="48"><img src="images/redbull_transparent.png"></marquee>
     </header>
 
     <div id="History">
@@ -94,6 +96,9 @@
     <footer>
         <h3>This website is made by Pranav Kapoor as an assignment for web design and user experience course.</h3>
     </footer>
+
+    <audio src="Audio/f1.mp3" autoplay loop>
+    </audio>
 </body>
 
 <style>
@@ -211,6 +216,10 @@
     .active {
         background-color: #ffffff;
         color: #111;
+    }
+
+    .active:hover {
+        background-color: gold;
     }
 
     #History {
