@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>
+        Red Bull Racing
+    </title>
+</head>
+
+<body>
+    <div id="redbull_desc">
+        <h1>
+            RED BULL RACING
+        </h1>
+        <div id="redbull_image">
+            <img src="images/red_bull.jpg">
+        </div>
+        <h2>
+            Current Drivers
+        </h2>
+        <div id="drivers">
+
+            <div class="driver">
+                <figure>
+                    <img src="images/verstappen.jpg">
+                    <figcaption>Max Verstappen</figcaption>
+                </figure>
+            </div>
+            <div class="driver">
+                <figure>
+                    <img src="images/checo.jpg">
+                    <figcaption>Checo Perez</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<style>
+    body {
+        box-sizing: border-box;
+        background-color: rgb(0, 0, 0);
+        background-image: url(images/background_image.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #redbull_desc h1 {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    #redbull_desc {
+        color: white;
+        text-align: start;
+        width: 100%;
+    }
+
+    #redbull_image {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #redbull_image img {
+        width: 50%;
+        height: 40%;
+    }
+
+    #redbull_desc h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5% 5%;
+        word-spacing: 5px;
+    }
+
+    #drivers {
+        display: flex;
+        margin-bottom: 10%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #drivers {
+        display: flex;
+        margin-left: 15%;
+    }
+
+    .driver figure {
+        width: 50%;
+    }
+
+    .driver figcaption {
+        margin-left: 50%;
+    }
+
+    .driver img {
+        width: 400px;
+        height: 100%;
+    }
+</style>
+
+</html>

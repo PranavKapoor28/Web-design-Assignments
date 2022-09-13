@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        F1 TV_Watch
+    </title>
+    <link rel="icon" type="image/x-icon" href="images/f1logo.jpg" />
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+    <nav>
+        <a href="main.html" style="float:left">Home</a>
+        <p style="float: left;color: white;margin-left: 27%;">Play Background music</p>
+        <audio src="Audio/f1.mp3" controls style="float: left;margin-left: 2%;">
+        </audio>
+        <a class="active" href="#slideshow" style="float:right">View top performing teams</a>
+
+        <!-- <div class="back_music">
+            <h3>Play Background music</h3>
+            <audio src="Audio/f1.mp3" controls>
+        </div> -->
+    </nav>
+
+
+    </audio>
+    <header>
+        <h1>
+            Formula 1 FanPage
+        </h1>
+    </header>
+
+    <div id="History">
+        <div id="HistoryText">
+            <h2>Explore the History of F1 teams</h2>
+        </div>
+        <div id="HistoryVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uA4xcZYVFTg?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="DriverView">
+        <div id="DriverImage">
+            <img src="images/lewis.jpg" />
+        </div>
+        <div id="DriverText">
+            <h2>Listen to the words of <mark><span> 7 time World champion </span> </mark> Lewis Hamilton</h2>
+            <br>
+            <p>"If you don't have the balls to brake late, that's your problem.”</p>
+            <p>“You just need to be accepted for who you are and be proud of who you are and that is what I'm trying to
+                do.”</p>
+            <p>“What people tend to forget is the journey that I had getting to Formula One. There were plenty of years
+                where I had to learn about losing and having bad races.”</p>
+            <p>Everyone has complicated lives, but the more you can simplify it and make it work for you, the better it
+                is going to be.</p>
+        </div>
+    </div>
+
+    <div class="cars_collection">
+        <h2>F1 Cars Collection</h2>
+    </div>
+
+    <div id="slideshow">
+        <div class="slide-wrapper">
+
+            <!-- Define each of the slides
+         and write the content -->
+
+            <div class="slide">
+                <a href="RedBull.html"><img src="images/red_bull.jpg">
+                    </img></a>
+            </div>
+            <div class="slide">
+                <a href="ferrari.html"><img src="images/ferrari.jpg">
+                    </img></a>
+            </div>
+            <div class="slide">
+                <a href="mercedes.html"> <img src="images/merc.jpg">
+                    </img></a>
+            </div>
+            <div class="slide">
+                <a href="mcleren.html"> <img src="images/mclaren.jpg">
+                    </img></a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <footer>
+        <h3>This website is made by Pranav Kapoor as an assignment for web design and user experience course.</h3>
+    </footer>
+</body>
+
+<style>
+    body {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        background-image: url(images/background_image.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav p {
+        font-size: 120%;
+    }
+
+    .back_music {
+        color: white;
+        display: flex;
+        margin-top: 5%;
+        float: right;
+        margin-left: 5%;
+    }
+
+    .back_music audio {
+        margin-left: 5%;
+    }
+
+    header {
+        color: white;
+        font-size: 150%;
+        text-align: center
+    }
+
+    header h1:before,
+    header h1:after {
+        background-color: rgb(255, 0, 0);
+        content: "";
+        display: inline-block;
+        height: 10px;
+        position: relative;
+        vertical-align: middle;
+        width: 30%;
+    }
+
+    header h1:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    header h1:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+    footer {
+        text-align: center;
+
+        color: rgb(243, 112, 112);
+        margin-top: 5%;
+    }
+
+
+    footer h3:before,
+    footer h3:after {
+        background-color: rgb(255, 255, 255);
+        content: "";
+        display: inline-block;
+        height: 5px;
+        position: relative;
+        vertical-align: middle;
+        width: 20%;
+    }
+
+    footer h3:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+
+    footer h3:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        .Grid_Inner {
+            flex: 50%;
+            max-width: 100%;
+        }
+    }
+
+    nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(214, 50, 0);
+    }
+
+    a {
+        display: block;
+        color: white;
+        font-size: 120%;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    a:hover:not(.active) {
+        background-color: rgb(255, 255, 255);
+        color: #111;
+    }
+
+    .active {
+        background-color: #ffffff;
+        color: #111;
+    }
+
+    #History {
+        display: flex;
+        margin-top: 10%;
+        justify-content: space-around;
+    }
+
+    #HistoryText {
+        color: white;
+        width: 50%;
+        float: left;
+        font-size: 120%;
+        margin-top: 10%;
+        margin-left: 10%;
+        clear: both;
+    }
+
+    #HistoryVideo {
+        justify-content: right;
+        clear: both;
+        float: right;
+        width: 50%;
+    }
+
+
+    #DriverView {
+        display: flex;
+        margin-top: 10%;
+        justify-content: space-around;
+    }
+
+    #DriverText {
+        color: white;
+        width: 50%;
+        float: right;
+        margin-right: 5%;
+        clear: both;
+    }
+
+    #DriverText h2 span {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px 10px;
+    }
+
+    #DriverText p {
+        font-size: 130%;
+    }
+
+    #DriverImage {
+        justify-content: right;
+        clear: both;
+        float: left;
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    #DriverImage img {
+        width: 80%;
+        height: 100%;
+    }
+
+    .cars_collection h2 {
+        color: white;
+        margin: 10% auto;
+        text-align: center;
+        font-size: 220%;
+    }
+
+    #slideshow {
+        overflow: hidden;
+        height: 100%;
+        background-color: rgba(255, 0, 0, 0.631);
+        padding: 10px 10px 10px 10px;
+        width: 80%;
+        margin: 2% auto;
+    }
+
+    /* Style each of the sides
+    with a fixed width and height */
+
+    .slide {
+        float: left;
+        height: 100%;
+        width: 20%;
+    }
+
+    .slide a {
+        background-color: red;
+    }
+
+    .slide img {
+        width: 500px;
+        height: 300px;
+    }
+
+    /* Add animation to the slides */
+
+    .slide-wrapper {
+
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(728px * 4);
+
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+    }
+
+    /* Define the animation
+    for the slideshow */
+
+    @keyframes slide {
+
+        /* Calculate the margin-left for
+      each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+
+        40% {
+            margin-left: calc(-728px * 1);
+        }
+
+        60% {
+            margin-left: calc(-728px * 2);
+        }
+
+        80% {
+            margin-left: calc(-728px * 1);
+        }
+    }
+</style>
+
+</html>

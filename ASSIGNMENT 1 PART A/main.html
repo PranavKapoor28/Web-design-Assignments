@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Welcome to PS GAMES
+    </title>
+    <link rel="icon" type="image/x-icon" href="images/ps_logo.jpg" />
+</head>
+
+<body>
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li style="float:right"><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <header>
+        <h1>
+            Welcome to PSN GAMES
+        </h1>
+        <i>
+            <h4>Explore, Choose and Buy your favourite games</h4>
+        </i>
+    </header>
+
+    <div class="Grid_Outer">
+        <div class="Grid_Inner">
+            <div class="Element"><a href="https://www.amazon.com/F1-2022-PlayStation-4/dp/B09XWJNVYL"><img
+                        src=images/f122.jpg /></a></div>
+            <div class="Element"><a
+                    href="https://www.amazon.com/FIFA-23-PlayStation-5/dp/B0B6JR3YDW/ref=sr_1_2?crid=1QKMATDHEBAN7&keywords=fifa+23&qid=1663007702&s=videogames&sprefix=fifa+23%2Cvideogames%2C103&sr=1-2"><img
+                        src=images/fifa23.jpg /></a></div>
+        </div>
+        <div class="Grid_Inner">
+            <div class="Element"><a
+                    href="https://www.amazon.com/Uncharted-Thiefs-Sony-PlayStation-Sealed-4/dp/B01M6BQ7HE/ref=sr_1_1?keywords=uncharted+4&qid=1663007684&s=videogames&sprefix=uncha%2Cvideogames%2C143&sr=1-1"><img
+                        src=images/uncharted.jpg /></a></div>
+            <div class="Element"><a
+                    href="https://www.amazon.com/Last-Us-Part-PlayStation-5/dp/B0B3QWRQL8/ref=sr_1_1_sspa?keywords=last+of+us&qid=1663007721&s=videogames&sprefix=las%2Cvideogames%2C115&sr=1-1-spons&psc=1"><img
+                        src=images/los_image.jpg /></a></div>
+        </div>
+    </div>
+
+    <div id="buy_sell">
+
+        <div id="consoles_text">
+            <h2>Buy Consoles</h2>
+            <p>Now you can buy consoles of your choice on our website. We have new as well as refurbished consoles
+                available for purchase.
+                <br><br><br>
+                View the list of consoles on the right.
+            </p>
+        </div>
+        <br>
+        <div id="buy_products">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PS5</td>
+                        <td>50000 RS</td>
+                    </tr>
+                    <tr>
+                        <td>PS4</td>
+                        <td>40000 Rs</td>
+
+                    </tr>
+                    <tr>
+                        <td>PSP</td>
+                        <td>10000 RS</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="buy_games">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fifa 23</td>
+                        <td>5000 RS</td>
+                    </tr>
+                    <tr>
+                        <td>F1 2022</td>
+                        <td>4000 Rs</td>
+
+                    </tr>
+                    <tr>
+                        <td>Uncharted collection</td>
+                        <td>7000 RS</td>
+                    </tr>
+                    <tr>
+                        <td>Last of us 2</td>
+                        <td>5500 RS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="games_text">
+            <h2>Buy Games</h2>
+            <p>Now buy your favourite games from our website. We have option for both digital as well as CD version
+                of
+                all the games.
+                <br><br><br>
+                View the list of games on the left.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+<style>
+    body {
+        box-sizing: border-box;
+        background-size: cover;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-color: rgb(109, 169, 189);
+        background-image: url(images/ps_back.jpg);
+    }
+
+    header {
+        color: white;
+        font-size: 150%;
+        text-align: center
+    }
+
+    .Grid_Outer {
+        display: flex;
+        margin-top: 5%;
+        background-color: rgba(0, 0, 0, 0.419);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Grid_Inner {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0% 2% 0% 2%;
+    }
+
+    .Element:hover {
+        border: 2px solid blue;
+    }
+
+    .Grid_Inner img {
+        margin-top: 5%;
+        width: 95%;
+        object-fit: cover;
+        height: 100%;
+        padding: 2%;
+    }
+
+    @media screen and (max-width: 800px) {
+        .Grid_Inner {
+            flex: 50%;
+            max-width: 100%;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(56, 52, 162);
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        font-size: 120%;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #04AA6D;
+    }
+
+    #consoles_text {
+        width: 45%;
+        color: white;
+        float: left;
+        font-size: 120%;
+        margin: 5% 2%;
+    }
+
+    #buy_products {
+        width: 40%;
+        float: right;
+        color: white;
+        font-size: 120%;
+        margin: 10% 0%;
+    }
+
+    #games_text {
+        width: 50%;
+        color: white;
+        float: right;
+        font-size: 120%;
+    }
+
+    #buy_games {
+        width: 45%;
+        float: left;
+        color: white;
+        font-size: 120%;
+        margin: 8% 2%;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 90%;
+    }
+
+    td {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    th {
+        border: 1px solid #999;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    thead {
+        background-color: #51abf4;
+    }
+</style>
+
+</html>
