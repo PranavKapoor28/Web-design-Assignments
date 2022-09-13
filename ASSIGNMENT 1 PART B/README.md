@@ -9,9 +9,9 @@
 
 # Tags used
 
-1. <header>
-2. <footer>
-3. <audio>
-4. <nav>
-5. <mark>
-6. <section>
+1. header
+2. footer
+3. audio
+4. nav
+5. mark
+6. section
